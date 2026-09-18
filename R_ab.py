@@ -74,7 +74,7 @@ mdot = st.number_input(
 
 if st.button("Calculate $r_{ab}$"):
 
-    RHS = 150 * (alpha * m)*(2/21) * mdot*(16/21)
+    RHS = 150 * ((alpha * m)**(2/21)) * (mdot**(16/21))
 
     st.write("Right-hand side:")
 
