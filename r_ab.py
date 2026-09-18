@@ -68,7 +68,11 @@ def calculate_r_ab(alpha, m, mdot):
             1e8
         )
 
-        return root1, root2
+        # Convert from r_ISCO units to R_S units
+        root1_Rs = 3 * root1
+        root2_Rs = 3 * root2
+
+        return root1_Rs, root2_Rs
 
     except ValueError:
 
