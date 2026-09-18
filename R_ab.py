@@ -16,9 +16,9 @@ def equation(r, alpha, m, mdot):
     The solution is obtained when equation(r) = 0.
     """
 
-    RHS = 150 * (alpha * m)*(2/21) * mdot*(16/21)
+    RHS = 150 * ((alpha * m)**(2/21)) * (mdot**(16/21))
 
-    LHS = r / (1 - r*(-0.5))*(16/21)
+    LHS = r / (1 - r**(-0.5))**(16/21)
 
     return LHS - RHS
 
